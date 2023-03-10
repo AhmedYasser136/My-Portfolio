@@ -30,7 +30,7 @@ h6 {
 a {
     text-decoration: none;
     color: var(--color-body);
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 a:hover {
@@ -74,6 +74,10 @@ img {
 
 }
 
+.navbar .nav-link.active {
+    color: var(--color-brand);
+}
+
 
 @media (min-width : 992px) {
     .navbar {
@@ -85,7 +89,7 @@ img {
     }
 
     .navbar-brand img {
-        border: 8px solid var(--color-body);
+        border: 8px solid var(--color-brand);
     }
 
     #contact-wrapper {
@@ -124,8 +128,32 @@ img {
     position: absolute;
     left: 0;
     top: 110%;
-    transition: all .8s ;
+    transition: all .8s;
 }
-.link-custom:hover::after{
-    width: 120%;
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
+.bg-base {
+    background-color: var(--color-base)
+}
+
+.shadow-effect {
+    transition: all .5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -8px 8px 0 0px var(--color-brand);
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
 }
